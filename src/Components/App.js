@@ -9,8 +9,9 @@ const App = () => {
     const [dish, setdish] = useState("")
     const [recipies, setrecipies] = useState([])
     const [healthLabel, sethealthLabel] = useState("vegan")
-    const getRecipeInfo=async()=>{
+    const getRecipeInfo=async()=>{ 
         const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${dish}&app_id=${ID}&app_key=${KEY}&&health=${healthLabel}`
+        {console.log(url)}
         const result=await Axios.get(url)
         setrecipies(result.data['hits'])
     }
@@ -20,10 +21,10 @@ const App = () => {
     }
     useEffect(()=>{
         getRecipeInfo()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[healthLabel]);
     return (
         <div className="main">
-        
             <h1>Food Recipe Plaza 🍔</h1>
             <form className="main__form">
                 <input className= "main_ingredient" type="text" placeholder="Enter Ingredient" name="dish" 
