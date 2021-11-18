@@ -74,7 +74,7 @@ body{
     border-radius: 4px;
     object-fit: cover;    
 }
-.tile p{
+.tile h4{
     max-width: 200px;
     text-align: center;
     margin-top: 3px;
