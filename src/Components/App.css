@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("https://www.solidbackgrounds.com/images/website/950x534/950x534-blue-abstract-noise-free-website-background-image.jpg");
+}
+.main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 10px, 20px;
+   color: white;
+}
+.main__form{
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    
+}
+.main_ingredient{
+    padding: 6px 16px;
+    margin-top: 5px;
+    min-width: 200px;
+    max-width: 100vw;
+    border-radius: 4px;
+
+}
+.main_submit{
+    padding: 6px 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: skyblue;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+}
+.main_submit:hover{
+    background-color: blueviolet;
+    padding: 6px 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.main select{
+    padding: 3px 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: khaki;
+    border-radius: 4px;
+}
+
+.tile{
+    margin:10px 2px;
+    align-items: center;
+    justify-content: center;
+}
+.tile:hover{
+    margin:10px 2px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    object-fit: cover;    
+}
+.tile p{
+    max-width: 200px;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+.main__recipies{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    
+}
